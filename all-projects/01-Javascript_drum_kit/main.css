@@ -1,0 +1,124 @@
+.active {
+  transition: all 0.9s linear;
+  scale: 1.09;
+  box-shadow: 2px 4px 4px rgba(247, 136, 55, 0.7);
+}
+
+header {
+  p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+body {
+  padding: 0.4rem 2rem;
+  background: url(./Playing\ jazz-bro.svg) no-repeat center;
+  height: 100vh;
+  background-color: #fbf9f7;
+  background-size: cover;
+  background-attachment: scroll;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+  background-blend-mode: multiply;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+main {
+  place-items: center;
+  display: grid;
+}
+
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.3rem;
+  row-gap: 2rem;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.key {
+  min-width: 2rem;
+  border: none;
+  text-align: center;
+  padding: 1rem 1.2rem;
+  font-size: 2.5rem;
+  color: #dfe4e5;
+  background-color: #002432;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: scale 300ms ease-in-out;
+  position: relative;
+  overflow: hidden;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 0.15rem solid rgb(154, 214, 13);
+    scale: 1.06;
+  }
+
+  &:hover {
+    /* border: 0.15rem solid #27c788; */
+    scale: 1.1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: rgba(154, 214, 13, 0.1);
+    transition: all 500ms linear;
+    inset: 0;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  kbd {
+    background-color: #dfe4e5;
+    padding: 0.2rem 0.6rem;
+    border-radius: 100px;
+    color: #002432;
+  }
+}
+
+footer {
+  text-align: center;
+
+  a {
+    color: #000;
+    transition: all 200ms linear;
+    display: inline-block;
+
+    &:hover {
+      color: #7862f8;
+      scale: 1.1;
+    }
+  }
+}
+
+@media (width >=47.8125rem) {
+  .back {
+    display: none;
+  }
+}
