@@ -1,0 +1,66 @@
+@import url("../../assets/css/common.css");
+
+:root {
+  --base: #d400ff;
+  --spacing: 5px;
+  --blur: 2px;
+}
+
+body {
+  text-align: center;
+  background: #011222;
+  color: white;
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 100;
+  padding-block: 3rem;
+}
+
+.main__header {
+  padding: 0 1rem;
+
+  a {
+    display: block;
+    text-align: left;
+    width: fit-content;
+    color: #fff;
+    text-transform: capitalize;
+  }
+}
+
+.controls {
+  margin-block: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    padding: 1rem 1.3rem;
+    text-transform: capitalize;
+    font-size: 2.7rem;
+    min-width: 20rem;
+    background-color: #0c2438;
+  }
+}
+
+input {
+  width: 100px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  width: 100%;
+  max-width: 50rem;
+}
+
+h1 {
+  color: var(--base);
+}
