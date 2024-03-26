@@ -1,3 +1,6 @@
+@import url('../../assets/css/common.css');
+
+
 .active {
   transition: all 0.9s linear;
   scale: 1.09;
