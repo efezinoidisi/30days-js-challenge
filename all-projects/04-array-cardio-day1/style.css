@@ -1,0 +1,23 @@
+@import url("../../assets/css/common.css");
+
+body {
+  background-color: #282828;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+h1 {
+  color: #ff5a00;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+p {
+  margin-block: 1rem;
+}
+
+a {
+  text-transform: capitalize;
+  color: #f5edcc;
+}

@@ -4,6 +4,7 @@
   --base: #d400ff;
   --spacing: 5px;
   --blur: 2px;
+  --radius: 8px;
 }
 
 body {
@@ -59,6 +60,7 @@ img {
   filter: blur(var(--blur));
   width: 100%;
   max-width: 50rem;
+  border-radius: var(--radius);
 }
 
 h1 {

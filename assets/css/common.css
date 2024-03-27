@@ -20,3 +20,7 @@ body {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
 }
+
+a {
+  color: inherit;
+}
