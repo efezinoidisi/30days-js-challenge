@@ -25,6 +25,10 @@ function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+/**
+ * 
+ * @param {string} value 
+ */
 function displayResults(value) {
   const results = store.filter(
     (item) =>
@@ -49,14 +53,6 @@ function displayResults(value) {
   suggestionsElement.innerHTML = html.join("");
 }
 
-function handleFormSubmit(e) {
-  e.preventDefault();
-  const value = query.value.toLowerCase();
-
-  displayResults(value);
-}
-
-form.addEventListener("submit", handleFormSubmit);
 query.addEventListener("keyup", (e) =>
   displayResults(e.target.value.toLowerCase())
 );

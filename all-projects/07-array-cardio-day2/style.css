@@ -1,0 +1,45 @@
+@import url(../../assets/css/common.css);
+
+body {
+  background: conic-gradient(
+    at left center,
+    rgb(234, 179, 8),
+    rgb(168, 85, 247),
+    #3b82f6
+  );
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.main__header {
+  padding: 2rem;
+  text-transform: capitalize;
+
+  a {
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: orangered;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-inline: 1.4rem;
+
+  p {
+    font-size: 2rem;
+    text-align: center;
+
+    &:nth-child(2) {
+      text-align: left;
+    }
+  }
+}
