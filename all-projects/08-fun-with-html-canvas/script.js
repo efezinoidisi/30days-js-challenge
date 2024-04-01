@@ -23,9 +23,15 @@ function draw(e) {
   context.strokeStyle = `hsl(${hue}, 100%, 50%)`;
   context.beginPath();
   context.moveTo(lastX, lastY);
-  context.lineTo(e.offsetX, e.offsetY);
+  context.lineTo(
+    e.offsetX || e.changedTouches[0].pageX,
+    e.offsetY || e.changedTouches[0].pageY
+  );
   context.stroke();
-  [lastX, lastY] = [e.offsetX, e.offsetY];
+  [lastX, lastY] = [
+    e.offsetX || e.changedTouches[0].pageX,
+    e.offsetY || e.changedTouches[0].pageY,
+  ];
   hue++;
   if (hue >= 360) {
     hue = 0;
@@ -50,9 +56,11 @@ canvas.addEventListener("mousedown", (e) => {
 canvas.addEventListener("mouseup", () => (isDrawing = false));
 canvas.addEventListener("mouseout", () => (isDrawing = false));
 
+
+// for mobile or touch screens
 canvas.addEventListener("touchstart", (e) => {
   isDrawing = true;
-  [lastX, lastY] = [e.offsetX, e.offsetY];
+  [lastX, lastY] = [e.changedTouches[0].pageX, e.changedTouches[0].pageY];
 });
 
 canvas.addEventListener("touchmove", draw);
