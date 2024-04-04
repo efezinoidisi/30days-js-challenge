@@ -1,0 +1,18 @@
+@import url(../../assets/css/common.css);
+
+body {
+  background: linear-gradient(to right, rgb(196, 181, 253), rgb(167, 139, 250));
+}
+
+.main__header {
+  padding: 2rem;
+
+  p {
+    text-align: center;
+  }
+}
+
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+}
