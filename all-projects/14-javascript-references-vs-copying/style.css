@@ -1,0 +1,25 @@
+@import url(../../assets/css/common.css);
+
+body {
+  padding: 2rem;
+  background: linear-gradient(
+    to right,
+    rgb(55, 65, 81),
+    rgb(17, 24, 39),
+    rgb(0, 0, 0)
+  );
+
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  transition: color 0.3s linear;
+
+  &:hover {
+    color: palevioletred;
+  }
+}

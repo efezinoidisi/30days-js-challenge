@@ -18,7 +18,7 @@ function debounce(func, wait = 20, immediate = true) {
   };
 }
 
-function checkSlide(event) {
+function checkSlide() {
   sliderImages.forEach((slideImg) => {
     const slideInAt = window.scrollY + window.innerHeight - slideImg.height / 2; // halfway through the image
 
