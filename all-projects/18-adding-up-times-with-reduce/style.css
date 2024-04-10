@@ -1,0 +1,41 @@
+@import url(../../assets/css/common.css);
+
+body {
+  background-image: url(../../assets/images/Hexagon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.main__header {
+  width: 100%;
+  margin-bottom: 2rem;
+
+  a {
+    transition: color 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+      color: violet;
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+
+  font-size: 1.7rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  border: 1px solid;
+  padding: 0.5rem;
+}
