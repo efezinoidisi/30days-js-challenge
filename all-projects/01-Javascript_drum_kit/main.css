@@ -1,5 +1,4 @@
-@import url('../../assets/css/common.css');
-
+@import url("../../assets/css/common.css");
 
 .active {
   transition: all 0.9s linear;
@@ -37,7 +36,7 @@ main {
 h1 {
   text-transform: capitalize;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 p {
@@ -59,7 +58,7 @@ p {
   border: none;
   text-align: center;
   padding: 1rem 1.2rem;
-  font-size: 2.5rem;
+  font-size: 1rem;
   color: #dfe4e5;
   background-color: #002432;
   cursor: pointer;

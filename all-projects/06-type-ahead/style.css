@@ -19,32 +19,31 @@ body {
 
 input {
   width: 100%;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .search-form {
   max-width: 400px;
-  margin: 50px auto;
+  margin: 3.125rem auto;
 }
 
 input.search {
-  margin: 0;
+  display: inline-block;
   text-align: center;
   outline: 0;
   border: 10px solid #f7f7f7;
-  width: 120%;
-  left: -10%;
+  width: 100%;
+  margin-inline: auto;
+
   position: relative;
-  top: 10px;
+  top: 0.625rem;
   z-index: 2;
   border-radius: 5px;
-  font-size: 40px;
+  font-size: 1.3rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
 }
 
 .suggestions {
-  margin: 0;
-  padding: 0;
   position: relative;
 }
 
@@ -53,12 +52,13 @@ input.search {
   list-style: none;
   border-bottom: 1px solid #d8d8d8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
-  margin: 0;
-  padding: 20px;
+  padding: 1.25rem;
   transition: background 0.2s;
   display: flex;
   justify-content: space-between;
   text-transform: capitalize;
+  width: 90%;
+  margin-inline: auto;
 }
 
 .suggestions li:nth-child(even) {

@@ -1,3 +1,5 @@
-## Javascript 30 days challenge
+![](https://javascript30.com/images/JS3-social-share.png)
 
-- [Day 1 - Javascript drum kit](./all-projects/01-Javascript_drum_kit/)
+# JavaScript30
+
+Grab the course at [https://JavaScript30.com](https://JavaScript30.com)

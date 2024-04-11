@@ -1,69 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Scoped CSS Variables and JS</title>
-    <link rel="icon" href="https://fav.farm/🔥" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header class="main__header">
-      <a href="../../index.html">back</a>
-      <h2>Update CSS Variables with <span class="hl">JS</span></h2>
-    </header>
-    <main>
-      <div class="controls">
-        <label>
-          spacing
-          <input
-            id="spacing"
-            type="range"
-            name="spacing"
-            min="10"
-            max="200"
-            value="10"
-            data-sizing="px"
-          />
-        </label>
 
-        <label>
-          blur
-          <input
-            id="blur"
-            type="range"
-            name="blur"
-            min="0"
-            max="25"
-            value="10"
-            data-sizing="px"
-          />
-        </label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-        <label>
-          border radius
-          <input
-            id="radius"
-            type="range"
-            name="radius"
-            min="0"
-            max="100"
-            value="8"
-            data-sizing="px"
-          />
-        </label>
+<body>
+  <header class="main__header">
+    <a href="../../index.html">back</a>
+    <h1>Update CSS Variables with <span class="hl">JS</span></h1>
+  </header>
+  <main>
+    <div class="controls">
+      <label>
+        spacing
+        <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px" />
+      </label>
 
-        <label>
-          base color
-          <input id="base" type="color" name="base" value="#d400ff" />
-        </label>
-      </div>
+      <label>
+        blur
+        <input id="blur" type="range" name="blur" min="0" max="25" value="1" data-sizing="px" />
+      </label>
 
-      <img
-        src="https://source.unsplash.com/g9myERGEar8/800x500"
-        alt="a room with a lot of pillows on the floor"
-      />
-    </main>
+      <label>
+        border radius
+        <input id="radius" type="range" name="radius" min="0" max="100" value="8" data-sizing="px" />
+      </label>
 
-    <script src="./script.js"></script>
-  </body>
+      <label>
+        base color
+        <input id="base" type="color" name="base" value="#d400ff" />
+      </label>
+    </div>
+
+    <img src="https://source.unsplash.com/g9myERGEar8/800x500" alt="a room with a lot of pillows on the floor" />
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>

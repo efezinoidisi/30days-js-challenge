@@ -1,7 +1,8 @@
 @import url(../../assets/css/common.css);
 
 body {
-  font-size: 20px;
+  font-size: 1.25rem;
+  background: linear-gradient(to right, rgb(134, 239, 172), rgb(192, 132, 252));
 }
 
 .main__header {
@@ -25,6 +26,7 @@ main {
   min-height: 70vh;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   width: 90%;
   margin-inline: auto;
 }
@@ -108,5 +110,11 @@ main {
   p {
     visibility: visible;
     translate: 0;
+  }
+}
+
+@media screen and (min-width:47.8rem) {
+  .panels {
+    flex-direction: row;
   }
 }

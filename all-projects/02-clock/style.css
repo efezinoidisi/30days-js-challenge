@@ -1,9 +1,12 @@
 @import url("../../assets/css/common.css");
 
 html {
-  background: #018ded url(https://unsplash.it/1500/1000?image=881&blur=5);
-  background-size: cover;
-  text-align: center;
+  background: linear-gradient(
+    to right,
+    rgb(254, 202, 202),
+    rgb(252, 165, 165),
+    rgb(254, 240, 138)
+  );
   font-size: 10px;
 }
 
@@ -15,19 +18,25 @@ body {
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
+  padding: 1rem;
+  overflow: hidden;
 }
 
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
   width: 100%;
   padding: 1rem 2rem;
   margin-bottom: 5rem;
 
   a {
-    text-transform: capitalize;
     color: black;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: capitalize;
   }
 }
 
@@ -43,7 +52,8 @@ header {
     inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
   background-image: url(./clock.png);
   background-position: center;
-  box-sizing: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .clock-face {
@@ -64,13 +74,14 @@ header {
 }
 
 .hour-hand {
-  height: 0.9rem;
+  height: 0.7rem;
 }
 
 .min-hand {
-  height: 0.6rem;
+  height: 0.5rem;
 }
 
 .second-hand {
   height: 0.3rem;
+  background-color: red;
 }

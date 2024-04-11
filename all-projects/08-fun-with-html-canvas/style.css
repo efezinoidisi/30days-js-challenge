@@ -21,6 +21,7 @@ canvas {
   border: 3px solid rgb(9, 23, 145);
   background-color: #fff;
   border-radius: 0.8rem;
+  max-width: 100%;
 }
 
 figcaption {
