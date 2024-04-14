@@ -24,3 +24,12 @@ body {
 a {
   color: inherit;
 }
+
+.main__header {
+  width: 100%;
+
+  h1 {
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
