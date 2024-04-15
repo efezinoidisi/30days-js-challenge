@@ -1,0 +1,42 @@
+@import url(../../assets/css/common.css);
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    to right,
+    rgb(249, 168, 212),
+    rgb(216, 180, 254),
+    rgb(129, 140, 248)
+  );
+  padding: 2rem;
+}
+
+p {
+  text-align: center;
+}
+
+.arrow {
+  width: 250px;
+  overflow: hidden;
+  transition: all 0.2s;
+  transform: rotate(0deg);
+  display: inline-block;
+}
+
+h2 {
+  color: white;
+  font-weight: 100;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.units {
+  font-size: 15px;
+}
+
+/*Compass: https://thenounproject.com/search/?q=compass&i=592352*/

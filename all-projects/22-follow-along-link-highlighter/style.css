@@ -1,0 +1,82 @@
+@import url(../../assets/css/common.css);
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgb(249, 168, 212),
+    rgb(216, 180, 254),
+    rgb(129, 140, 248)
+  );
+  padding: 2rem;
+}
+
+.wrapper {
+  margin-inline: auto;
+  width: 95%;
+  max-width: 31.25rem;
+  font-size: 1rem;
+  line-height: 2;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.main__header a {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.1rem;
+}
+
+.highlight {
+  transition: all 0.2s;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 0;
+  background: white;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem auto;
+  background-color: rgb(226, 203, 252);
+  overflow-x: scroll;
+  width: 85%;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  gap: 0.6rem;
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 0.5rem;
+  color: black;
+  text-wrap: nowrap;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 47.8125rem) {
+  .menu {
+    width: fit-content;
+    justify-content: center;
+  }
+}
