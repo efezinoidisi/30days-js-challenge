@@ -1,0 +1,40 @@
+@import url(../../assets/css/common.css);
+
+main {
+  position: relative;
+}
+
+div {
+  width: 100%;
+  padding: 100px;
+}
+
+.one {
+  background: thistle;
+}
+
+.two {
+  background: mistyrose;
+}
+
+.three {
+  background: coral;
+}
+
+button {
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
+  background-color: yellowgreen;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(48, 70, 4);
+  }
+}
