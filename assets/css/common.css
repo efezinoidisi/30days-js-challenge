@@ -32,4 +32,8 @@ a {
     text-align: center;
     text-transform: capitalize;
   }
+
+  a {
+    transition: all 0.2s;
+  }
 }
