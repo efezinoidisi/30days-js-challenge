@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+
+<body>
+  <header class="main__header">
+    <nav>
+      <a href="../../index.html">back</a>
+    </nav>
+    <h1>countdown timer</h1>
+  </header>
+  <main class="timer">
+    <div class="timer__controls">
+      <button data-time="20" class="timer__button" type="button">20 Secs</button>
+      <button data-time="300" class="timer__button" type="button">Work 5</button>
+      <button data-time="900" class="timer__button" type="button">Quick 15</button>
+      <button data-time="1200" class="timer__button" type="button">Snack 20</button>
+      <button data-time="3600" class="timer__button" type="button">Lunch Break</button>
+      <form name="customForm" id="custom">
+        <input type="text" name="minutes" placeholder="Enter Minutes">
+      </form>
+    </div>
+    <div class="display">
+      <h2 class="display__time-left"></h2>
+      <p class="display__end-time"></p>
+      <button type="button" class="stop-timer-btn">stop timer</button>
+
+    </div>
+
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

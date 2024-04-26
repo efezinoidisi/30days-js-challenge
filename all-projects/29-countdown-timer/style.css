@@ -1,0 +1,125 @@
+@import url(../../assets/css/common.css);
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: "Inconsolata", monospace;
+  background: linear-gradient(
+      to right,
+      rgba(190, 18, 60, 0.4),
+      rgba(219, 39, 119, 0.4)
+    ),
+    url("https://source.unsplash.com/75xPHEQBmvA/1200*900");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 1rem;
+}
+
+.main__header {
+  h1 {
+    color: wheat;
+    font-size: 2.2rem;
+  }
+
+  a {
+    color: teal;
+
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+}
+
+.display__time-left {
+  font-weight: 500;
+  font-size: 7rem;
+  margin: 0;
+  color: white;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.timer {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.timer__controls {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+.timer__controls form {
+  display: block;
+}
+
+.timer__controls input {
+  flex: 1;
+  border: 0;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  height: 100%;
+}
+
+.timer__button,
+.stop-timer-btn {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  font-family: "Inconsolata", monospace;
+}
+
+.timer__button:hover,
+.timer__button:focus,
+.stop-timer-btn:hover,
+.stop-timer-btn:focus {
+  background: rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+
+.display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display__end-time {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+}
+
+.stop-timer-btn {
+  display: none;
+}
+
+.display__time-left:not(:empty) ~ .stop-timer-btn {
+  display: block;
+  margin-top: 1rem;
+}
+
+@media (min-width: 47.8125rem) {
+  .main__header h1 {
+    font-size: 3rem;
+  }
+
+  .display__time-left {
+    font-size: 12rem;
+  }
+
+  .display__end-time {
+    font-size: 2.5rem;
+  }
+}
